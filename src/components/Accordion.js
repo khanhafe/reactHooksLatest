@@ -7,7 +7,7 @@ const Accordion = ({ items }) => {
 
   const renderedItems = items.map((item, index) => {
     return (
-      <div className="divdesign">
+      <div className="divdesign" key={item.title}>
         <p onClick={() => ontitleClicked(index)}>{item.title}</p>
         <div>{item.content}</div>
       </div>
